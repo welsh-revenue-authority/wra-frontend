@@ -6,6 +6,7 @@
       "node": "^16.0.0"
     },
     "scripts": {
+      "build:stylesheets": "node-sass wra_frontend/src/scss -o assets/stylesheets",
       "clean:package": "rm -rf package/wra-frontend",
       "copy:scss": "copyfiles 'wra_frontend/src/scss/**/*.scss' package/wra-frontend/ --up 3",
       "build:package": "npm-run-all clean:package copy:*",
