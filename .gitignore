@@ -1,0 +1,16 @@
+node_modules/
+assets/
+.DS_Store
+
+*.egg-info
+
+/.python-version
+__pycache__/
+*.py[cod]
+.eggs
+
+.venv/
+
+build/
+
+.idea
