@@ -11,7 +11,7 @@ on:
 env:
   USER_EMAIL: ${{ secrets.USER_EMAIL }}
   USER_TOKEN: ${{ secrets.USER_TOKEN }}
-  USER_USERNAME: ${{ secrets.USER_USERNAME }}
+  USER_USERNAME: ${{ secrets.USER_NAME }}
 
 jobs:
   build:
