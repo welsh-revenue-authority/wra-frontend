@@ -1,0 +1,33 @@
+{
+    "name": "wra-frontend",
+    "description": "WRA Frontend",
+    "version": "0.0.1",
+    "engines": {
+      "node": ">= 4.2.0"
+    },
+    "author": "WRA digital team",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/welsh-revenue-authority/wra-frontend.git"
+    },
+    "bugs": {
+      "url": "https://github.com/welsh-revenue-authority/wra-frontend/issues"
+    },
+    "keywords": ["frontend", "design system", "template"],
+    "license": "MIT",
+    "dependencies": {
+      "browser-sync": "^2.27.7",
+      "chokidar-cli": "^3.0.0",
+      "copyfiles": "latest",
+      "node-sass": "^6.0.1",
+      "nps": "^5.10.0",
+      "rollup": "^2.60.0",
+      "standardx": "^7.0.0"
+    },
+    "homepage": "https://github.com/welsh-revenue-authority/wra-frontend#readme",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    }
+  }
+  

@@ -1,0 +1,7 @@
+{
+  "WRAFrontendPath": "node_modules/wra-frontend/",
+  "scssPath": "./src/scss",
+  "staticFilesPath": "'application/static'",
+  "watchPaths": "'./src/scss/**/*.scss'",
+  "stylesheetsOutputPath": "assets/stylesheets"
+}
