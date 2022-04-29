@@ -9,6 +9,10 @@ init::
 package:
 	npm run build:package
 
+clean-package:
+	rm -r package/wra-frontend
+	git co package/wra-frontend
+
 commit-package::
 	git add package/wra-frontend
 	git diff --quiet && git diff --staged --quiet || (git commit -m "Rebuilt package $(shell date +%F)"; git push origin $(BRANCH))
