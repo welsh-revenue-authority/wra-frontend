@@ -16,7 +16,8 @@ if (fs.existsSync(optionalConfigPath)) {
 }
 
 scripts.build = {
-  stylesheets: `npx node-sass ${configPaths.scssPath} -o ${configPaths.stylesheetsOutputPath} --include-path ${configPaths.WRAFrontendPath}`
+  stylesheets: `npx node-sass ${configPaths.scssPath} -o ${configPaths.stylesheetsOutputPath} --include-path ${configPaths.WRAFrontendPath}`,
+  gel: `npx node-sass ${configPaths.WRAFrontendPath}wra-frontend/wales-gel/wales-gel.scss -o ${configPaths.stylesheetsOutputPath}/walesgel --include-path ${configPaths.WRAFrontendPath}`
 }
 
 scripts.watch = {
