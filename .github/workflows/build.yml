@@ -9,9 +9,9 @@ on:
   workflow_dispatch:
 
 env:
-  DLB_BOT_EMAIL: ${{ secrets.DLB_BOT_EMAIL }}
-  DLB_BOT_TOKEN: ${{ secrets.DLB_BOT_TOKEN }}
-  DLB_BOT_USERNAME: ${{ secrets.DLB_BOT_USERNAME }}
+  USER_EMAIL: ${{ secrets.USER_EMAIL }}
+  USER_TOKEN: ${{ secrets.USER_TOKEN }}
+  USER_USERNAME: ${{ secrets.USER_USERNAME }}
 
 jobs:
   build:
@@ -28,9 +28,9 @@ jobs:
 
     - name: Setup git
       run: |
-        git config user.email "${DLB_BOT_EMAIL}"
-        git config user.name "${DLB_BOT_USERNAME}"
-        git remote set-url origin https://${DLB_BOT_USERNAME}:${DLB_BOT_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        git config user.email "${USER_EMAIL}"
+        git config user.name "${USER_USERNAME}"
+        git remote set-url origin https://${USER_USERNAME}:${USER_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
         git checkout main
 
     - name: Make init
