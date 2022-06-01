@@ -37,3 +37,8 @@ Then, when you want to build your stylesheets run,
 npm run nps build.stylesheets
 ```
 
+## To do
+
+* Replace Wales GEL compiled assets with building blocks
+* flesh out the common page layouts
+* create jinja components for common components
