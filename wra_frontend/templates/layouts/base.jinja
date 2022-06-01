@@ -88,5 +88,15 @@
 	    {% include 'wra-frontend/partials/footer.jinja' %}
     {% endblock %}
 
+    {% block bodyEnd %}
+        {%- block bodyScriptsStart %}{% endblock bodyScriptsStart %}
+
+        {%- block bodyScripts %}
+            {% block commonScripts %}{% endblock commonScripts %}
+            {%- block pageScripts %}{% endblock pageScripts %}
+        {%- endblock bodyScripts %}
+
+        {%- block bodyScriptsEnd %}{% endblock bodyScriptsEnd %}
+    {% endblock %}
 </body>
 </html>
