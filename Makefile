@@ -6,6 +6,9 @@ BRANCH := $(shell git rev-parse --abbrev-ref HEAD)
 init::
 	npm install
 
+test-scss-build:
+	npm run build:stylesheets
+
 package:
 	npm run build:package
 
