@@ -1,0 +1,20 @@
+.wra-\!-margin-bottom-9 {
+  margin-bottom: 30px !important;
+  @include mq($from: tablet) {
+    margin-bottom: 45px !important;
+  }
+}
+
+.wra-\!-margin-bottom-6 {
+  margin-bottom: 20px !important;
+  @include mq($from: tablet) {
+    margin-bottom: 30px !important;
+  }
+}
+
+.wra-\!-margin-bottom-4 {
+  margin-bottom: 15px !important;
+  @include mq($from: tablet) {
+    margin-bottom: 20px !important;
+  }
+}
