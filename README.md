@@ -4,15 +4,16 @@ A repository for reusable bits of frontend code.
 
 ## Getting started
 
-The css 
-
-In your project
-
 ```
 npm install
 ```
 
 ## Using WRA-Frontend in your projects
+
+In the `package.json` file include the `devDependency`
+```
+"wra-frontend": "https://gitpkg.now.sh/welsh-revenue-authority/wra-frontend/package?main"
+```
 
 ### Use a copy of Wales GEL
 
