@@ -9,6 +9,9 @@ init::
 test-scss-build:
 	npm run build:stylesheets
 
+js:
+	npm run build:javascripts
+
 package:
 	npm run build:package
 

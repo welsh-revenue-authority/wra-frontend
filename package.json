@@ -3,34 +3,38 @@
     "version": "0.0.1",
     "description": "Frontend components and assets for the WRA",
     "engines": {
-      "node": "^16.0.0"
+        "node": "^16.0.0"
     },
     "scripts": {
-      "build:stylesheets": "node-sass wra_frontend/src/scss -o assets/stylesheets",
-      "clean:package": "rm -rf package/wra-frontend",
-      "copy:scss": "copyfiles 'wra_frontend/src/scss/**/*.scss' package/wra-frontend/ --up 3",
-      "build:package": "npm-run-all clean:package copy:*",
-      "build": "npm-run-all --serial lint:* build:*"
+        "build:javascripts": "rollup --config rollup.config.js",
+        "build:stylesheets": "node-sass wra_frontend/src/scss -o assets/stylesheets",
+        "clean:package": "rm -rf package/wra-frontend",
+        "copy:scss": "copyfiles 'wra_frontend/src/scss/**/*.scss' package/wra-frontend/ --up 3",
+        "build:package": "npm-run-all clean:package build:javascripts copy:*",
+        "build": "npm-run-all --serial lint:* build:*"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/welsh-revenue-authority/wra-frontend.git"
+        "type": "git",
+        "url": "git+https://github.com/welsh-revenue-authority/wra-frontend.git"
     },
-    "keywords": ["frontend", "css", "jinja"],
+    "keywords": [
+        "frontend",
+        "css",
+        "jinja"
+    ],
     "author": "WRA",
     "license": "MIT",
     "bugs": {
-      "url": "https://github.com/welsh-revenue-authority/wra-frontend/issues"
+        "url": "https://github.com/welsh-revenue-authority/wra-frontend/issues"
     },
     "homepage": "https://github.com/welsh-revenue-authority/wra-frontend#readme",
     "devDependencies": {
-      "copyfiles": "latest",
-      "node-sass": "^6.0.1",
-      "npm": "^8.3.0",
-      "npm-run-all": "^4.1.5",
-      "rollup": "^2.60.0",
-      "sass-lint": "^1.13.1",
-      "standardx": "^7.0.0"
+        "copyfiles": "latest",
+        "node-sass": "^6.0.1",
+        "npm": "^8.3.0",
+        "npm-run-all": "^4.1.5",
+        "rollup": "^2.75.6",
+        "sass-lint": "^1.13.1",
+        "standardx": "^7.0.0"
     }
-  }
-  
+}
