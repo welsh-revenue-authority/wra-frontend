@@ -2,6 +2,8 @@
   "WRAFrontendPath": "node_modules/wra-frontend/",
   "scssPath": "./src/scss",
   "staticFilesPath": "'application/static'",
-  "watchPaths": "'./src/scss/**/*.scss'",
-  "stylesheetsOutputPath": "assets/stylesheets"
+  "watchPaths": "'./src/scss/**/*.scss' './src/javascripts/**/*.js'",
+  "jsOutputPath": "assets/javascripts",
+  "stylesheetsOutputPath": "assets/stylesheets",
+  "rollupConfig": "./rollup.config.js"
 }

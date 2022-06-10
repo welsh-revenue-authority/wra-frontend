@@ -17,10 +17,12 @@ if (fs.existsSync(optionalConfigPath)) {
 
 scripts.build = {
   stylesheets: `npx node-sass ${configPaths.scssPath} -o ${configPaths.stylesheetsOutputPath} --include-path ${configPaths.WRAFrontendPath}`,
-  gel: `npx node-sass ${configPaths.WRAFrontendPath}wra-frontend/wales-gel/wales-gel.scss -o ${configPaths.stylesheetsOutputPath}/walesgel --include-path ${configPaths.WRAFrontendPath}`
+  gel: `npx node-sass ${configPaths.WRAFrontendPath}wra-frontend/wales-gel/wales-gel.scss -o ${configPaths.stylesheetsOutputPath}/walesgel --include-path ${configPaths.WRAFrontendPath}`,
+  javascripts: `npx rollup --config ${configPaths.rollupConfig}`
 }
 
 scripts.watch = {
+  assets: `npx chokidar ${configPaths.watchPaths} -c "npm run nps build.javascripts && npm run nps build.stylesheets"`,
   stylesheets: `npx chokidar ${configPaths.watchPaths} -c "npm run nps build.stylesheets"`
 }
 
