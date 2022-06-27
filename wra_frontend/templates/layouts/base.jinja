@@ -27,7 +27,7 @@
 </head>
 
 <body class="{{ bodyClasses }} lang-{{pageLang}}">
-    <script>document.body.className = ((document.body.className) ? document.body.className + ' js' : 'js');</script>
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
     {% block bodyStart %}{% endblock %}
 
     {% block skipLink %}
