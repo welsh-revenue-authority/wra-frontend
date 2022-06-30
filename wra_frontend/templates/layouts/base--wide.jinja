@@ -40,7 +40,7 @@
 
     {% block header %}
     <div class="gel-beta accessible accessible--red">
-        <div class="container-fluid">
+        <div class="wra-width-container--wide">
             <div class="row">
 
                 <div class="col-md-7">
@@ -65,7 +65,7 @@
     </div>
 
     <div class="gel_masthead">
-        <div class="container-fluid">
+        <div class="wra-width-container--wide">
         {% block masthead %}{% endblock masthead %}
         </div>
     </div>
@@ -76,7 +76,7 @@
         {% block main %}
         <main id="wg_main" class="wg_main">
             {% block beforeContent %}{% endblock %}
-            <div id="main__body" class="main__body container-fluid home">
+            <div id="main__body" class="main__body wra-width-container--wide home">
                 {% block content %}{% endblock %}
             </div>
         </main>
@@ -88,7 +88,8 @@
 	    {% block footerStart %}{% endblock footerStart %}
 	    {% from 'wra-frontend/components/footer/macro.jinja' import wraFooter  %}
         {{ wraFooter({
-            "pageLang": 'en'
+            "pageLang": 'en',
+            "wideLayout": "true"
         }) }}
     {% endblock %}
 
