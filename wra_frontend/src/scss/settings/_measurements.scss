@@ -1,0 +1,28 @@
+
+/// Width of main container
+///
+/// @type Number
+/// @access public
+
+$wra-page-width: 1000px !default;
+
+/// Max width of main container for 'fullscreen' layouts
+///
+/// @type Number
+/// @access public
+
+$wra-wide-page-width: 1920px !default;
+
+/// Width of gutter between grid columns
+///
+/// @type Number
+/// @access public
+
+$wra-gutter: 20px !default;
+
+/// Width of half the gutter between grid columns
+///
+/// @type Number
+/// @access public
+
+$wra-gutter-half: $wra-gutter / 2;
