@@ -1,7 +1,7 @@
 {
     "name": "wra-frontend",
     "description": "WRA Frontend",
-    "version": "0.0.6",
+    "version": "0.1.2",
     "engines": {
       "node": ">= 4.2.0"
     },
