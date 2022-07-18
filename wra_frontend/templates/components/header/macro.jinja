@@ -1,0 +1,32 @@
+{% macro wraHeader(params) %}
+<div class="gel-beta accessible accessible--red">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-7">
+                <div class="gel-beta__message-wrapper">
+                    <div class="gel-beta__message">
+                    {% if params.phaseMarker %}
+                        <a id="{{ params.phaseMarker.id }}" class="{{ params.phaseMarker.classes }}">{{ params.phaseMarker.text }}</a>
+                    {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="gel-beta__actions-wrapper">
+                    <div class="gel-beta__actions">
+                    {% if params.feedback %}
+                        <a class="btn btn--black" href="mailto:{{ params.feedback.email }}">{{ params.feedback.text }}</a>
+                    {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="gel-beta__minimise hidden-lg">
+            {% if params.minimise %}
+                <button class="gel-beta__minimise-button  js-gel-beta-minimise"><span class="visually-hidden">{{ params.minimise.text }}</span></button>
+            {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}
