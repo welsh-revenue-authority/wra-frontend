@@ -38,8 +38,9 @@
     </div>
     {% endblock %}
 
-    {% block header %}
+    {% block header -%}
 
+    {% block headerTop -%}
     {% from 'wra-frontend/components/header/macro.jinja' import wraHeader -%}
     {{ wraHeader({
         "phaseMarker": {
@@ -55,13 +56,17 @@
             "text": "minimise"
         }
     }) }}
+    {%- endblock headerTop %}
 
+    {% block headerMastHead -%}
     <div class="gel_masthead">
         <div class="container-fluid">
         {% block masthead %}{% endblock masthead %}
         </div>
     </div>
-    {% endblock %}
+    {%- endblock headerMastHead %}
+
+    {%- endblock %}
 
     <div id="page_wrapper"  class="layout-container">
 
