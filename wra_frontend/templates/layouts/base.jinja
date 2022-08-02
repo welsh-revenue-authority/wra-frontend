@@ -83,10 +83,13 @@
 
     {% block footer %}
 	    {% block footerStart %}{% endblock footerStart %}
+        {% block wraFooter %}
 	    {% from 'wra-frontend/components/footer/macro.jinja' import wraFooter  %}
         {{ wraFooter({
             "pageLang": 'en'
         }) }}
+        {% endblock wraFooter %}
+        {% block footerEnd %}{% endblock footerEnd %}
     {% endblock %}
 
     {% block bodyEnd %}
