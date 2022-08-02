@@ -14,7 +14,7 @@ for directory in directories_jinja:
 
 setup(
     name="wra-frontend",
-    version="0.1.2",
+    version="0.1.3",
     author="WRA team",
     description="Reusable frontend code for wra services and products",
     license="MIT",
