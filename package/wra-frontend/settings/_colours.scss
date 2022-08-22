@@ -12,6 +12,14 @@ $wra-organisation-colour: rgb(41,35,92);
 
 $wra-border-colour: rgb(241, 241, 241);
 
+/// Primary text colour
+/// 
+/// Used for headings and body text
+///
+/// @type Colour
+/// @access public
+
+$wra-text-colour: #1f1f1f;
 
 /// Secondary text colour
 /// 
@@ -21,3 +29,11 @@ $wra-border-colour: rgb(241, 241, 241);
 /// @access public
 
 $wra-secondary-text-colour: #666666;
+
+// ===================================
+// consider colour map for these
+// ===================================
+
+$wra-dark-grey: #4b4b4b;
+$wra-mid-grey: #787878;
+$wra-light-grey: #c7c7c7;
