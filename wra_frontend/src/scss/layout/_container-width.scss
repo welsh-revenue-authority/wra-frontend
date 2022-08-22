@@ -75,3 +75,6 @@
   @include wra-width-container($wra-wide-page-width);
 }
 
+.wra-width-container--extra {
+  @include wra-width-container($wra-extra-page-width);
+}

@@ -13,6 +13,13 @@ $wra-page-width: 1000px !default;
 
 $wra-wide-page-width: 1920px !default;
 
+/// Extra width for main container for 'desktop' layouts
+///
+/// @type Number
+/// @access public
+
+$wra-extra-page-width: 1920px !default;
+
 /// Width of gutter between grid columns
 ///
 /// @type Number

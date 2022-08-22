@@ -73,7 +73,7 @@
         {% block main %}
         <main id="wg_main" class="wg_main">
             {% block beforeContent %}{% endblock %}
-            <div id="main__body" class="main__body container-fluid home">
+            <div id="main__body" class="main__body {{ main_bodyClasses|default('container-fluid') }}">
                 {% block content %}{% endblock %}
             </div>
         </main>
