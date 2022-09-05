@@ -1,0 +1,16 @@
+.wra-heading__caption {
+  display: block;
+  color: $wra-secondary-text-colour;
+  font-size: 14px;
+  letter-spacing: .08em;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0;
+  height: unset;
+  margin-top: 24px;
+}
+
+.wra-heading__caption + h1 {
+  margin-top: 0;
+}
