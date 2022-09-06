@@ -1,5 +1,6 @@
 // Size of chevron (excluding border)
 $chevron-size: 7px;
+$chevron-size-half: $chevron-size / 2;
 
 // Size of chevron border
 $chevron-border-width: 1px;
@@ -14,7 +15,7 @@ $chevron-border-colour: $wra-secondary-text-colour;
 $chevron-altitude-calculated: 5.655px;
 
 .wra-breadcrumbs {
-  color: $wra-organisation-colour;
+  color: $wra-text-colour;
   font-size: 16px;
 
   margin-top: wra-spacing(3);
@@ -53,6 +54,7 @@ $chevron-altitude-calculated: 5.655px;
     // Offset by the difference between the width of the non-rotated square
     // and its width when rotated
     left: (($chevron-altitude-calculated * -2) + $chevron-size + $chevron-border-width);
+    top: calc(50% - #{$chevron-size-half});
 
     width: $chevron-size;
     height: $chevron-size;
@@ -78,6 +80,11 @@ $chevron-altitude-calculated: 5.655px;
       content: none;
       display: none;
     }
+  }
+
+  a {
+    color: $wra-organisation-colour;
+    text-decoration: underline;
   }
 }
 
